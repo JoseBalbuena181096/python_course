@@ -3,7 +3,8 @@ import random
 
 ventana = t.Screen()
 ventana.setup(width=500, height=400)
-eleccion = ventana.textinput(title='Carrera de tortugas', prompt='¿Cuál tortuga ganará la carrera?, ingrese el color en ingles')
+ventana.bgcolor('black')
+eleccion = ventana.textinput(title='Carrera de tortugas', prompt='¿Cuál tortuga ganará la carrera?, ingrese el color en ingles blue, green, red, purple')
 
 colores = ['blue','green','red','purple']
 posiciones_y = [-120,-40,40,120]
