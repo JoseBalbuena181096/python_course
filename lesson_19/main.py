@@ -13,7 +13,7 @@ ventana.tracer(0)
 
 #creamos un jugador
 jugador = Jugador()
-#creamos los carros
+#creamos los meteoros
 meteoritos =  Meteoritos()
 #creamos un marcador
 marcador = Marcador()
@@ -31,10 +31,10 @@ while not fin_juego:
     #pequeño retardo para que nuestro juego para que nos sea tan rapido
     time.sleep(velocidad_juego)
     ventana.update()
-    #crear un carro a la vez
+    #crear un meteoro a la vez
     meteoritos.crear_meteorito()
     meteoritos.mover_meteoritos()
-    #Detectectar choque con algun carro
+    #Detectectar choque con algun meteoro
     for meteorito in meteoritos.meteoritos_lista:
         if meteorito.distance(jugador) < 25:
             fin_juego = True
