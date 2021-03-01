@@ -25,7 +25,7 @@ ventana.onkey(jugador.abajo,'Down')
 ventana.onkey(jugador.izquierda,'Left')
 ventana.onkey(jugador.derecha,'Right')
 
-velocidad_juego = 0.1
+velocidad_juego = 0.09
 fin_juego = False
 while not fin_juego:
     #pequeño retardo para que nuestro juego para que nos sea tan rapido
@@ -45,5 +45,4 @@ while not fin_juego:
         velocidad_juego *= 0.9 
         jugador.ir_inicio()
         
-
 ventana.exitonclick()
